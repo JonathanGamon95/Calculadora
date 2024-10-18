@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo_calculadora.css">
+    <!--estilo de letras-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+    <title>calculadora</title>
+</head>
+<body>
+    <div class="contenedor_calculadora">
+        <div class="cont_boton_tema"><button class="tema_oscuro" id="boton_tema"></button></div>
+        <div class="cont_resultados"><p id="resultado">0</p></div>
+        
+        <div class="cont_botones">
+            <div class="caja_borrador"><button class="operador operador_oscuro" onclick="borrado()">C</button></div>
+            <div class="caja"><button class="operador operador_oscuro" onclick="agregarSigno('/')">/</button></div>
+            <div class="caja"><button class="operador operador_oscuro" onclick="agregarSigno('*')">X</button></div>
+            <div class="caja"><button class="boton_numerico numerico_oscuro" onclick="agregarNumero(7)">7</button></div>
+            <div class="caja"><button class="boton_numerico numerico_oscuro" onclick="agregarNumero(8)">8</button></div>
+            <div class="caja"><button class="boton_numerico numerico_oscuro" onclick="agregarNumero(9)">9</button></div>
+            <div class="caja"><button class="operador operador_oscuro" onclick="agregarSigno('-')">-</button></div>
+            <div class="caja"><button class="boton_numerico numerico_oscuro" onclick="agregarNumero(4)">4</button></div>
+            <div class="caja"><button class="boton_numerico numerico_oscuro" onclick="agregarNumero(5)">5</button></div>
+            <div class="caja"><button class="boton_numerico numerico_oscuro" onclick="agregarNumero(6)">6</button></div>
+            <div class="caja"><button class="operador operador_oscuro" onclick="agregarSigno('+')">+</button></div>
+            <div class="caja"><button class="boton_numerico numerico_oscuro" onclick="agregarNumero(1)">1</button></div>
+            <div class="caja"><button class="boton_numerico numerico_oscuro" onclick="agregarNumero(2)">2</button></div>
+            <div class="caja"><button class="boton_numerico numerico_oscuro" onclick="agregarNumero(3)">3</button></div>
+            <div class="caja_igual"><button class="operador operador_oscuro" onclick="opeacion()">=</button></div>
+            <div class="caja"><button class="boton_numerico numerico_oscuro" onclick="agregarNumero(0)">0</button></div>
+            <div class="caja"><button class="boton_numerico numerico_oscuro"></button></div>
+            <div class="caja"><button id="boton_retroceso" class="boton_numerico numerico_oscuro" onclick="retroceso()"><</button></div>
+        </div>
+    </div>
+
+    <script src="cambio_de_tema.js"></script>
+    <script src="funcion_calculadora.js"></script>
+</body>
+</html>
